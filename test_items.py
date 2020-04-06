@@ -9,3 +9,5 @@ def test_add_to_basket_button(browser):
         browser.find_element_by_css_selector('.btn-add-to-basket')
     except Exception:
         raise AssertionError('Element was not found')
+# Вызвал ассерт еррор не через костыль с длиной, как в комментах писали, а через костыль с вызовом напрямую
+# если элемент не будет найден
